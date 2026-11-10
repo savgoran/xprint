@@ -1,0 +1,40 @@
+name: Import XPrint source
+
+on:
+  push:
+    paths:
+      - '.xprint-import/**'
+      - '.github/workflows/import-xprint.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rebuild and publish archival source
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .xprint-import/chunk* > /tmp/xprint.b64
+          base64 -d /tmp/xprint.b64 > /tmp/xprint.tar.zst
+          rm -rf /tmp/xprint-src
+          mkdir -p /tmp/xprint-src
+          zstd -d -c /tmp/xprint.tar.zst | tar -xf - -C /tmp/xprint-src
+          shopt -s dotglob
+          cp -a /tmp/xprint-src/. .
+          rm -rf .xprint-import
+          rm -f .github/workflows/import-xprint.yml
+          rmdir .github/workflows 2>/dev/null || true
+          rmdir .github 2>/dev/null || true
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Publish XPrint archival source"
+          git push origin HEAD:main
