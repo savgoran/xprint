@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<LotoTicket>
+	<SerijaRect>
+		<x>10</x>
+		<y>25</y>
+		<widith>5</widith>
+		<height>8</height>
+	</SerijaRect>
+	<RbkRect>
+		<x>19</x>
+		<y>25</y>
+		<widith>12</widith>
+		<height>8</height>
+	</RbkRect>
+	<KbRect>
+		<x>37</x>
+		<y>25</y>
+		<widith>5</widith>
+		<height>8</height>
+	</KbRect>
+	<BarcodeRect>
+		<x>10</x>
+		<y>40</y>
+		<widith>32</widith>
+		<height>17</height>
+	</BarcodeRect>
+	<TablePos>
+	  <x>70</x>
+	  <y>10</y>
+	</TablePos>
+	<CellSize>
+	  <width>7</width>
+	  <height>7</height>
+	</CellSize>
+	<SerijaFont>
+	  <name>Arial</name>
+	  <size>12</size>
+	</SerijaFont>
+	<BarcodeFont>
+	  <name>IDAutomationHC39M</name>
+	  <size>8</size>
+	</BarcodeFont>
+</LotoTicket>

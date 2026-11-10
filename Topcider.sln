@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawSurface", "DrawSurface.cs\DrawSurface.csproj", "{0A23D547-FFBD-46DE-B48C-A30951E85183}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1EB34396-F7AC-4FD4-87C9-374DFB389E8F} = {1EB34396-F7AC-4FD4-87C9-374DFB389E8F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphicObjects", "GraphicObjects.cs\GraphicObjects.csproj", "{1EB34396-F7AC-4FD4-87C9-374DFB389E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotvrdaEdit", "PotvrdaEdit\PotvrdaEdit.csproj", "{2EE3A4B2-36F3-407F-B4AF-E916E5C6E0F1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1EB34396-F7AC-4FD4-87C9-374DFB389E8F} = {1EB34396-F7AC-4FD4-87C9-374DFB389E8F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShemaEdit", "ShemaEdit\ShemaEdit.csproj", "{3E796B65-1901-47F2-9C5C-380886AA0EE5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0A23D547-FFBD-46DE-B48C-A30951E85183} = {0A23D547-FFBD-46DE-B48C-A30951E85183}
+		{1EB34396-F7AC-4FD4-87C9-374DFB389E8F} = {1EB34396-F7AC-4FD4-87C9-374DFB389E8F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPrint", "XPrint\XPrint.csproj", "{F83A1011-54C1-4E72-8100-5315EE2017B7}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TopciderInstall", "Setup1\Setup1.vdproj", "{5EC7A4AA-8331-4095-B89C-91B34940321D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A23D547-FFBD-46DE-B48C-A30951E85183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A23D547-FFBD-46DE-B48C-A30951E85183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A23D547-FFBD-46DE-B48C-A30951E85183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A23D547-FFBD-46DE-B48C-A30951E85183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB34396-F7AC-4FD4-87C9-374DFB389E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB34396-F7AC-4FD4-87C9-374DFB389E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB34396-F7AC-4FD4-87C9-374DFB389E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB34396-F7AC-4FD4-87C9-374DFB389E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EE3A4B2-36F3-407F-B4AF-E916E5C6E0F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EE3A4B2-36F3-407F-B4AF-E916E5C6E0F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EE3A4B2-36F3-407F-B4AF-E916E5C6E0F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EE3A4B2-36F3-407F-B4AF-E916E5C6E0F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E796B65-1901-47F2-9C5C-380886AA0EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E796B65-1901-47F2-9C5C-380886AA0EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E796B65-1901-47F2-9C5C-380886AA0EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E796B65-1901-47F2-9C5C-380886AA0EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F83A1011-54C1-4E72-8100-5315EE2017B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83A1011-54C1-4E72-8100-5315EE2017B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83A1011-54C1-4E72-8100-5315EE2017B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83A1011-54C1-4E72-8100-5315EE2017B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EC7A4AA-8331-4095-B89C-91B34940321D}.Debug|Any CPU.ActiveCfg = Debug
+		{5EC7A4AA-8331-4095-B89C-91B34940321D}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

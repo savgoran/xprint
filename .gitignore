@@ -1,0 +1,56 @@
+# Visual Studio / .NET build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+.vs/
+
+# User / IDE state
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.gpState
+
+# Legacy Visual SourceSafe metadata
+*.scc
+*.vssscc
+*.vspscc
+vssver.scc
+mssccprj.scc
+
+# Upgrade / conversion artifacts
+UpgradeLog*.XML
+_UpgradeReport_Files/
+
+# Installer output
+*.msi
+setup.exe
+Setup.exe
+
+# Debug symbols / generated binaries
+*.pdb
+*.vshost.*
+
+# Databases and data snapshots
+*.mdb
+*.accdb
+*.mdf
+*.ldf
+*.bak
+*.db
+*.sqlite
+*.sqlite3
+
+# Backups
+Backup/
+Backup1/
+Backup2/
+Backup3/
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db

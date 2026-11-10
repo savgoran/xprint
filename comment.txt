@@ -1,0 +1,6 @@
+17/12/2004 - poceo sam da radim kontrolu za selekciju objekata, kakva postoji u vecini gra-
+fickih programa (Corel). Kontrola ima osam crnih kvadratica poredjanih u pravcu strana sveta.
+Povlacenjem bilo kog kvadratica kontrola menja svoju velicinu.
+- compaund object - objekt koji sadrzi druge graficke objekte.
+
+01/02/2005 - druga serija. Rucno dodata u TicketObject.cs.
